@@ -10,6 +10,9 @@ Since this method doesn't involve rooting the device, Magisk and Zygisk modules 
 Note: This approach is currently theoretical and has not been fully tested.
 
 For dynamic instrumentation in a rootless environment:
+
 Step 1: Install Shizuku from https://github.com/RikkaApps/Shizuku and establish a USB debugging session with the Shizuku app to grant necessary permissions.
+
 Step 2: Install LSPatch, a non-root Xposed framework. Since the original project is no longer maintained, the fork by JingMatrix can be used instead: https://github.com/JingMatrix/LSPatch.
+
 Step 3: Install Mujde from https://github.com/mon231/com.rel.mujde and load your Frida JavaScript instrumentation scripts into the app for runtime patching and analysis.
